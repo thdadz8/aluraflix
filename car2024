@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Super Carros</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* Estilos do cabeçalho */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+
+    /* Container geral */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Grid dos vídeos */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    /* Card de vídeo */
+    .video-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .video-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Thumbnail do vídeo */
+    .video-thumbnail {
+      width: 100%;
+      height: 180px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Conteúdo do card */
+    .video-content {
+      padding: 15px;
+    }
+
+    .video-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .video-description {
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Catálogo de Super Carros</h1>
+    <p>Assista aos melhores vídeos dos supercarros mais desejados do mundo!</p>
+  </header>
+
+  <div class="container">
+    <div class="video-grid">
+      <!-- Card 1 -->
+      <div class="video-card">
+        <div class="video-thumbnail" style="background-image: url('https://example.com/ferrari.jpg');"></div>
+        <div class="video-content">
+          <h2 class="video-title">Ferrari LaFerrari</h2>
+          <p class="video-description">Desfrute da velocidade e potência deste ícone italiano.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="video-card">
+        <div class="video-thumbnail" style="background-image: url('https://example.com/lamborghini.jpg');"></div>
+        <div class="video-content">
+          <h2 class="video-title">Lamborghini Aventador</h2>
+          <p class="video-description">Experimente o luxo e a adrenalina com este supercarro.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="video-card">
+        <div class="video-thumbnail" style="background-image: url('https://example.com/bugatti.jpg');"></div>
+        <div class="video-content">
+          <h2 class="video-title">Bugatti Chiron</h2>
+          <p class="video-description">Velocidade incomparável para os fãs de carros extremos.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="video-card">
+        <div class="video-thumbnail" style="background-image: url('https://example.com/porsche.jpg');"></div>
+        <div class="video-content">
+          <h2 class="video-title">Porsche 911 GT3 RS</h2>
+          <p class="video-description">Uma máquina de corrida pronta para as ruas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
